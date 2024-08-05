@@ -1,4 +1,7 @@
 package com.auth.AuthApi_1.repository;
 
-public class UserRepository {
+import com.auth.AuthApi_1.model.User;
+import org.springframework.data.jpa.repository.JpaRepository;
+
+public interface UserRepository extends JpaRepository<User, Integer> {
 }
